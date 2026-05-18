@@ -1,3 +1,5 @@
+name: Claude Code Review
+
 on:
   pull_request:
     types: [opened, synchronize, ready_for_review]
@@ -26,6 +28,8 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          use_bedrock: false
+          use_vertex: false
           prompt: |
             Read CLAUDE.md first to understand project conventions and rules.
             Then review this PR diff according to those rules.

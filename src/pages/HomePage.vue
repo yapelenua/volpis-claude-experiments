@@ -19,6 +19,8 @@ const tableData: TableRow[] = [
   { id: 2, name: 'Bob Chen',      role: 'Designer',  email: 'bob@example.com'   },
   { id: 3, name: 'Carol Okonkwo', role: 'PM',        email: 'carol@example.com' },
 ]
+
+console.log('Hello, world');
 </script>
 
 <template>

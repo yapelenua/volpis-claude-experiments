@@ -20,7 +20,7 @@ const tableData: TableRow[] = [
   { id: 3, name: 'Carol Okonkwo', role: 'PM',        email: 'carol@example.com' },
 ]
 
-console.log('Hello, world!');
+console.log('Hello, world! second this time');
 </script>
 
 <template>

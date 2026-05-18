@@ -29,7 +29,7 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           show_full_output: true
-          allowed_tools: "Bash,Read,Write,Edit"
+          claude_args: "--allowedTools Bash,Read,Write,Edit"
           prompt: |
             You are reviewing GitHub PR #${{ github.event.pull_request.number }} in repo ${{ github.repository }}.
             

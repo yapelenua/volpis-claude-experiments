@@ -28,8 +28,10 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          show_full_output: true
           prompt: |
             Read CLAUDE.md first to understand project conventions and rules.
             Then review this PR diff according to those rules.
             Post inline comments on specific lines where rules are violated.
-            End with a short summary comment on the PR.
+            Always post a summary comment on the PR, even if no issues were found.
+            If no issues found, write: "✅ Code review passed. No issues found."

@@ -1,0 +1,11 @@
+/* Load order matters:
+   1. Element Plus base styles (before Tailwind so utilities can override if needed)
+   2. Our theme variable overrides
+   3. Tailwind — WITHOUT preflight so EP styles are not reset */
+
+@import "element-plus/dist/index.css";
+@import "./element-theme.css";
+
+/* Tailwind v4: import theme tokens + utilities, skip preflight */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);

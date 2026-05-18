@@ -1,0 +1,15 @@
+/* Element Plus theme customization via CSS custom properties.
+   Override any token here — changes propagate to all EP components. */
+:root {
+  --el-color-primary: #3b82f6;          /* blue-500 */
+  --el-color-primary-light-3: #93c5fd;  /* blue-300 */
+  --el-color-primary-light-5: #bfdbfe;  /* blue-200 */
+  --el-color-primary-light-7: #dbeafe;  /* blue-100 */
+  --el-color-primary-light-8: #eff6ff;  /* blue-50  */
+  --el-color-primary-light-9: #f8faff;
+  --el-color-primary-dark-2: #2563eb;   /* blue-600 */
+
+  --el-border-radius-base: 0.375rem;    /* rounded-md */
+  --el-font-family: ui-sans-serif, system-ui, sans-serif;
+  --el-font-size-base: 14px;
+}

@@ -25,8 +25,8 @@ jobs:
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-        prompt: |
-          Read CLAUDE.md first to understand project conventions and rules.
-          Then review this PR diff according to those rules.
-          Post inline comments on specific lines where rules are violated.
-          End with a short summary comment on the PR.
+          prompt: |
+            Read CLAUDE.md first to understand project conventions and rules.
+            Then review this PR diff according to those rules.
+            Post inline comments on specific lines where rules are violated.
+            End with a short summary comment on the PR.
